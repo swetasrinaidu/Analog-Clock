@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    
+}
+.clock{
+   position: relative; 
+   border-radius: 50%;
+   background-color: black;
+   width:600px;
+   height:600px;
+   border:10px solid gray;
+}
+.num{
+    color:white;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    width:100%;
+    height:100%;
+}
+.num1{transform: rotate(30deg); }
+.num2{transform: rotate(60deg); }
+.num3{transform: rotate(90deg); }
+.num4{transform: rotate(120deg); }
+.num5{transform: rotate(150deg); }
+.num6{transform: rotate(180deg); }
+.num7{transform: rotate(210deg); }
+.num8{transform: rotate(240deg); }
+.num9{transform: rotate(270deg); }
+.num10{transform: rotate(300deg); }
+.num11{transform: rotate(330deg); }
+.num12{transform: rotate(360deg); }
+
+.number1{transform:rotate(330deg);}
+.number2{transform:rotate(300deg);}
+.number3{transform:rotate(270deg);}
+.number4{transform:rotate(240deg);}
+.number5{transform:rotate(210deg);}
+.number7{transform:rotate(150deg);}
+.number8{transform:rotate(120deg);}
+.number9{transform:rotate(90deg);}
+.number10{transform:rotate(60deg);}
+.number11{transform:rotate(30deg);}
+
+
+.hours_hand,.minutes_hand,.seconds_hand{
+  position: absolute;
+  z-index:10;
+  bottom:50%;
+  left:50%;
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px;
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  
+}
+.hours_hand{
+    width:12px;
+    height:35%;
+    background-color: brown;
+
+}
+.minutes_hand{
+    width:10px;
+    height:40%;
+    background-color: pink;
+}
+.seconds_hand{
+    width:8px;
+    height:45%;
+    background-color: burlywood;
+}
